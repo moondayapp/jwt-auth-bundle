@@ -6,7 +6,6 @@ use Auth0\SDK\Helpers\Cache\CacheHandler;
 use Auth0\SDK\JWTVerifier;
 use Auth0\SDK\Auth0Api;
 use Auth0\SDK\API\Authentication;
-use Symfony\Component\Security\Core\User\User;
 
 /**
  * @author german
@@ -55,7 +54,9 @@ class Auth0Service {
     /**
      * Get the Auth0 User Profile based on the JWT (and validate it).
      *
-     * @return User info as described in https://docs.auth0.com/user-profile
+     * @param string $jwt The encoded JWT token
+     *
+     * @return array info as described in https://auth0.com/docs/users/concepts/overview-user-profile
      */
     public function getUserProfileByA0UID($jwt, $a0UID)
     {
