@@ -2,8 +2,6 @@
 
 namespace Auth0\JWTAuthBundle\Security\Core;
 
-use stdClass;
-use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
