@@ -26,7 +26,7 @@ class JwtUserProvider implements JWTUserProviderInterface
     /**
      * {@inheritdoc}
      */
-    public function loadUserByJWT($jwt)
+    public function loadUserByJWT(object $jwt)
     {
         $token = null;
         if (isset($jwt->token)) {
