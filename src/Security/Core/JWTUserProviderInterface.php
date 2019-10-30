@@ -22,5 +22,5 @@ interface JWTUserProviderInterface extends UserProviderInterface
      *
      * @throws JWTInfoNotFoundException if the user is not found
      */
-    public function loadUserByJWT(object $jwt): UserInterface;
+    public function loadUserByJWT($jwt): UserInterface;
 }
